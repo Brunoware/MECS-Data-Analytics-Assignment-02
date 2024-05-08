@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  mlops:
+    build: .
+    image: doby
+    ports:
+      - 8000:5000
+    volumes:
+      - .:/app
